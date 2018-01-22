@@ -1,14 +1,15 @@
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
+        android:scaleType="centerCrop"
         android:adjustViewBounds="true"
         android:src="@drawable/google_udacity_logo" />
 
@@ -16,10 +17,11 @@
         android:id="@+id/udacity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/address1"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-light"
-        android:paddingLeft="36dp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="24dp"
         android:paddingBottom="24dp"
         android:text="Udacity" />
 
@@ -27,30 +29,30 @@
         android:id="@+id/address1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/address2"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-light"
-        android:paddingLeft="36dp"
-        android:paddingBottom="24dp"        android:text="2465 Latham St" />
+        android:paddingLeft="24dp"
+        android:paddingBottom="24dp"
+        android:text="2465 Latham St" />
 
     <TextView
         android:id="@+id/address2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/phone"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-light"
-        android:paddingLeft="36dp"
-        android:paddingBottom="24dp"        android:text="Mountain View, CA 94043" />
+        android:paddingLeft="24dp"
+        android:paddingBottom="24dp"
+        android:text="Mountain View, CA 94043" />
 
     <TextView
         android:id="@+id/phone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:fontFamily="sans-serif-light"
-        android:paddingLeft="36dp"
-        android:paddingBottom="24dp"        android:text="650-555-5555" />
+        android:paddingLeft="24dp"
+        android:paddingBottom="24dp"
+        android:text="650-555-5555" />
 
-</RelativeLayout>
+</LinearLayout>
